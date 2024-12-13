@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - Esports Club</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="display: flex; justify-content: space-between; align-items: center;">
+                <li>
+                    <a href="/">
+                        <img src="/images/logo/logo.png" alt="Логотип" style="width: 100px;">
+                    </a>
+                </li>
+                <div style="display: flex; gap: 20px;">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/news">Новости</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align: center;">Контакты</h1>
+        <div class="contact-container">
+            <section id="contact-info" class="contact-info">
+                <h2>Контактная информация</h2>
+                <p><strong>Адрес:</strong> Москва, Профсоюзная, 56 (Башня Cherry Tower)</p>
+                <p><strong>Прямой телефон:</strong> 8 800 444-13-02</p>
+                <p><strong>Email:</strong> info@esportsclub.ru</p>
+                <p><strong>ООО "РИКИКС"</strong></p>
+                <p><strong>ИНН:</strong> 2368010296 <strong>ОГРН:</strong> 1182375044697</p>
+                <p><strong>Почтовый адрес:</strong> 352630, Краснодарский кр, город Белореченск, район Белореченский, улица Интернациональная, дом 30</p>
+            </section>
+            <section id="contact-form" class="contact-form">
+                <h2>Напишите нам</h2>
+                <form style="display: grid; gap: 15px;">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Ваша почта" required>
+                    <input type="text" placeholder="Адрес или название клуба">
+                    <textarea name="message" placeholder="Сообщение" required></textarea>
+                    <button type="submit">Написать отзыв</button>
+                </form>
+            </section>
+        </div>
+        <div class="contact-container">
+            <section id="map"></section>
+        </div>
+    </main>
+    <footer>
+        <p> 2024 Esports Club</p>
+    </footer>
+    <script src="/scripts/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=72d5a2ed-3ff0-4691-ba11-7460ea88c9d0&lang=ru_RU" type="text/javascript"></script>
+    <script src="/scripts/map.js"></script>
+    <script src="/scripts/contact.js"></script>
+</body>
+</html>
